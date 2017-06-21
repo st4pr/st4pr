@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .wrapper {
 	max-width: 1080px;
 }
@@ -6,5 +7,18 @@
 	display: flex;
 	.headHolder {
 		width: 33.3%;
+=======
+@import "partials/setup";
+
+header {
+	background-color: #ED1C24;
+	height: 100vh;
+	text-align: center;
+
+	h1 {
+		color: white;
+		font-size: 70px;
+		margin-top: 0;
+>>>>>>> c43b3625870096078a09169e02bc8ab59fc1b622
 	}
 }
