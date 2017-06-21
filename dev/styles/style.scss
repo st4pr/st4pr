@@ -1,9 +1,15 @@
 @import "partials/setup";
 
 .wrapper {
-	max-width: 1000px;
+	max-width: 1080px;
 	margin: 0 auto;
 }
+
+.heads {
+	display: flex;
+	.headHolder {
+		width: 33.3%;
+
 
 header {
 	background-color: #ED1C24;
