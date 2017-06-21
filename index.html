@@ -3,27 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Our First React App!!!!!!!!!!!!!!!!!!</title>
+	<link rel="stylesheet" href="./public/styles/style.css">
 </head>
 <body>
 	<header>
 		<h1>To our Cool Cool Cool HY Instructors</h1>
-		<h3>From your Sick Spring &#12296;br&#12297;</h3>
+		<h3>From your Sick Spring &#12296;br&#12297; Students</h3>
 	</header>
-	<main>
-		<div class="headHolder ryanHead">
-			<img src="./assets/ryan-head.png" alt="">
-		</div>
-		<div class="headHolder simonHead">
-			<img src="./assets/simon-head.png" alt="">
-		</div>
-		<div class="headHolder sylviaHead">
-			<img src="./assets/sylvia-head.png" alt="">
-		</div>
-	</main>
+	<div class="wrapper">
+		<section class="heads">
+			<div class="headHolder ryanHead" >
+				<img src="./assets/ryan-head.png" alt="" data-quotes="ryanQuotes" id="ryan">
+			</div>
+			<div class="headHolder sylviaHead" >
+				<img src="./assets/sylvia-head.png" alt="" data-quotes="sylviaQuotes" id="sylvia">
+			</div>
+			<div class="headHolder simonHead" >
+				<img src="./assets/simon-head.png" alt="" data-quotes="simonQuotes" id="simon">
+			</div>
+			<div class="quoteBox">
+				
+			</div>
+		</section>
+	</div>
+
 	<footer>
 		
 	</footer>
 
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="public/scripts/app.js"></script>
 </body>
 </html>
