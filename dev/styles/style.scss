@@ -1,13 +1,46 @@
 @import "partials/setup";
 
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
 header {
 	background-color: #ED1C24;
 	height: 100vh;
 	text-align: center;
-
+	position: relative;
 	h1 {
 		color: white;
+		font-family: 'Kranky', cursive;
+		font-size: 90px;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	span {
+		display: block;
 		font-size: 70px;
-		margin-top: 0;
+		text-transform: uppercase;
+	}
+}
+
+footer {
+	background-image: url(../../assets/palmtrees.png);
+	height: 100vh;
+	text-align: center;
+	position: relative;
+	h2 {
+		color: white;
+		text-shadow: 2px 2px 0 darkcyan;
+		font-family: 'Kranky', cursive;
+		font-size: 90px;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
 	}
 }
