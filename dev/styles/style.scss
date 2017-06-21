@@ -1,5 +1,9 @@
 @import "partials/setup";
 
+body {
+	background-image: url(../../assets/palmtrees.png);
+}
+
 .wrapper {
 	max-width: 1080px;
 	margin: 0 auto;
@@ -9,17 +13,21 @@
 	display: flex;
 	.headHolder {
 		width: 33.3%;
-
+		img {
+			width: 100%;
+		}
+	}
+}
 
 header {
-	background-color: #ED1C24;
 	height: 100vh;
 	text-align: center;
 	position: relative;
 	h1 {
 		color: white;
-		font-family: 'Kranky', cursive;
+		font-family: 'Unkempt', cursive;
 		font-size: 90px;
+		text-shadow: 2px 2px 0 darkcyan;
 		margin: 0;
 		position: absolute;
 		top: 50%;
@@ -33,15 +41,63 @@ header {
 	}
 }
 
+.quoteBox {
+	visibility: hidden;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 10px 30px;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 20px;
+	border: 2px dotted darkcyan;
+	p {
+		font-size: 50px;
+		color: darkcyan;
+		text-shadow: 3px 3px 2px white;
+		font-family: 'Unkempt', cursive;
+		margin: 0;
+		line-height: 1;
+		position: relative;
+		bottom: 50%;
+	}
+}
+
+#sylvia:hover {
+	animation: dance 2s infinite;
+}
+
+@keyframes dance {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(30deg);
+	}
+
+	50% {
+		transform: rotate(-30deg);
+	}
+
+	75% {
+		transform: rotate(30deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
 footer {
-	background-image: url(../../assets/palmtrees.png);
 	height: 100vh;
 	text-align: center;
 	position: relative;
 	h2 {
 		color: white;
 		text-shadow: 2px 2px 0 darkcyan;
-		font-family: 'Kranky', cursive;
+		font-family: 'Unkempt', cursive;
 		font-size: 90px;
 		margin: 0;
 		position: absolute;

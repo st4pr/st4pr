@@ -1,6 +1,6 @@
 const ryanQuotes = ['pretty cool, pretty fun, pretty neat', 'you need two daddys', 'flushed with cache', 'tabs tabs tabs for days'];
 const simonQuotes = ['pretty great', 'a hexagon of compliments, if you will', 'automagically', 'this.props.match.params.id, YO', `jokes on them they dont exist anymore...rewind THAT blockbuster`, 'we’re playing with fire-gami', 'going shopping with RyRy, my bff', 'pretty fly for a RyGuy', 'LET ME LIVE MY LIFE', `you're all surgeons, code surgeons. 'Scalpel! Cut! Paste!`, 'it was Rhianna', `we're a college now!` ];
-const sylviaQuotes = ['CATBURGERS', '(after hours) body waxing', 'don’t be a hero', 'we gucci', 'Div Daddy', 'PI-KA-CHUUUUU!', ''];
+const sylviaQuotes = ['CATBURGERS', '(after hours) body waxing', 'don’t be a hero', 'we gucci', 'Div Daddy', 'PI-KA-CHUUUUU!'];
 
 const app = {};
 
@@ -18,6 +18,7 @@ app.quoteHandler = function() {
 
 	$('#ryan').on('click', function() {
 		$('.quoteBox').empty();
+		$(".quoteBox").css("visibility", "visible");
 		let index = app.randomIndex(ryanQuotes);
 		let quote = ryanQuotes[index];
 		let quoteElement = $('<p>').text(quote);
@@ -26,6 +27,7 @@ app.quoteHandler = function() {
 
 	$('#simon').on('click', function() {
 		$('.quoteBox').empty();
+		$(".quoteBox").css("visibility", "visible");
 		let index = app.randomIndex(simonQuotes);
 		let quote = simonQuotes[index];
 		let quoteElement = $('<p>').text(quote);
@@ -34,6 +36,7 @@ app.quoteHandler = function() {
 
 	$('#sylvia').on('click', function() {
 		$('.quoteBox').empty();
+		$(".quoteBox").css("visibility", "visible");
 		let index = app.randomIndex(sylviaQuotes);
 		let quote = sylviaQuotes[index];
 		let quoteElement = $('<p>').text(quote);
